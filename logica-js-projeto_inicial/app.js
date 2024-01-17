@@ -9,7 +9,7 @@ while (number != secretNumber) {
     number = prompt('Choose a number from 1 to 30');
 
     if (secretNumber == number) {
-        console.log(`Congrats, YOU WIN! The number is ${secretNumber} with ${attempts} `);
+        break;
     } else {
         if ( number > secretNumber){
             alert(`The number is less than ${number}`);
@@ -21,3 +21,7 @@ while (number != secretNumber) {
         attempts++;
     }
 }
+let wordAttemps = attempts > 1 ? 'attemps' : 'attemp'
+
+alert(`Congrats, YOU WIN! The number is ${secretNumber} with ${attempts} ${wordAttemps} `);
+
