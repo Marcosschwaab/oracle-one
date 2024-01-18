@@ -1,12 +1,12 @@
 alert ('Welcome the GAME');
 
-let secretNumber = 5;
+let secretNumber = parseInt(Math.random() * 100 + 1);
 let number;
 let attempts = 1;
 
 while (number != secretNumber) {
 
-    number = prompt('Choose a number from 1 to 30');
+    number = prompt('Choose a number from 0 to 100');
 
     if (secretNumber == number) {
         break;
