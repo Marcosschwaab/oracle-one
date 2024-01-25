@@ -1,3 +1,5 @@
 let listaGenerica = [];
 
-let linguagens = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+let linguagensDeProgramacao = ['JavaScript', 'C', 'C++', 'Kotlin', 'Python'];
+
+linguagensDeProgramacao.push('Java', 'Ruby', 'GoLang');
