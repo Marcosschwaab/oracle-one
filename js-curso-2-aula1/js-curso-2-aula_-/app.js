@@ -1,5 +1,5 @@
 let listNumbersSort = [];
-
+let numberLimit = 3;
 let secretNumber = createNumberRandom();
 let attemps = 1;
 
@@ -37,7 +37,12 @@ function checkKick() {
 }
 
 function createNumberRandom(){
-    let numberChosen =  parseInt(Math.random() * 10 + 1);
+    let numberChosen =  parseInt(Math.random() * numberLimit + 1);
+    let quantityElementsList = listNumbersSort.length;
+        if (quantityElementsList == numberLimit){
+            listNumbersSort = [];
+        }
+
         if (listNumbersSort.includes(numberChosen)){
             return createNumberRandom();
         }
