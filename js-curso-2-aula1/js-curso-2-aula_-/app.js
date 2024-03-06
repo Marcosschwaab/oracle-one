@@ -7,6 +7,7 @@ let attemps = 1;
 function showTextTags(tag, text){
     let element = document.querySelector(tag);
     element.innerHTML = text;
+    responsiveVoice.speak(texto, 'Brazilian Portuguese Female', {rate:1.2});
 }
  
 function showInitialGame(){
